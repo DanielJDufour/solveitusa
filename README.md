@@ -16,38 +16,16 @@ sudo apt-get install -y curl vim git
 sudo apt-get install -y postgresql libpq-dev
 ```
 
-Reset User Password
+####Create PostgreSQL User
+Create 'solveit' postgreSQL user that Ruby app will use.
 ```
-sudo service postgresql stop
-sudo vim /etc/postgresql/9.3/main/pg_hba.conf
-sudo service postgresql start
 sudo su - postgres
-psql -d template1 -U postgres
-alter user postgres with password 'password';sudo 
-sudo vim /etc/postgresql/9.3/main/pg_hba.conf
-sudo service postgresql start
-```
-
-If the pg_hba.conf file doesn't exist there, it's possible it exists elsewhere.  Here's how to find it.
-```
-sudo update db
-locate pg_hba.conf
-
-```
-
-
-
-Create solveit user that the Ruby app will use
-```
-sudo su -postgres
 psql
-   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB
+   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB;
 ```
-
-
 
 ####Remove Old Ruby
-Ubuntu sometimes ships with a messed-up version of ruby
+Ubuntu sometimes ships with a messed-up version of ruby.
 ```
 sudo apt-get remove -y --purge ruby-rvm ruby
 sudo rm -rf /usr/share/ruby-rvm /etc/rmvrc /etc/profile.d/rvm.sh
