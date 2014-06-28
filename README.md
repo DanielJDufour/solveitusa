@@ -16,6 +16,14 @@ sudo apt-get install -y curl vim git
 sudo apt-get install -y postgresql libpq-dev
 ```
 
+Create users that the Ruby apps will use
+```
+sudo service postgresql stop
+
+```
+
+
+
 ####Remove Old Ruby
 Ubuntu sometimes ships with a messed-up version of ruby
 ```
