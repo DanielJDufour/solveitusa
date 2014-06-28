@@ -26,11 +26,7 @@ psql -d template1 -U postgres
 alter user postgres with password 'password';sudo 
 sudo vim /etc/postgresql/9.3/main/pg_hba.conf
 sudo service postgresql start
-sudo su -postgres
-psql
-   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB
 ```
-
 
 If the pg_hba.conf file doesn't exist there, it's possible it exists elsewhere.  Here's how to find it.
 ```
@@ -43,7 +39,9 @@ locate pg_hba.conf
 
 Create solveit user that the Ruby app will use
 ```
-
+sudo su -postgres
+psql
+   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB
 ```
 
 
