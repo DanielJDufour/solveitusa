@@ -28,7 +28,7 @@ sudo vim /etc/postgresql/9.3/main/pg_hba.conf
 sudo service postgresql start
 sudo su -postgres
 psql
-   #postgres-# CREATE ROLE solveit PASSWORD 'XXX' CREATEDB
+   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB
 ```
 
 
