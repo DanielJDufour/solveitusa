@@ -13,7 +13,7 @@ sudo apt-get install -y curl vim git
 
 ####Install PostgreSQL
 ```
-sudo apt-get install -y postgresql postgresql-server-dev-X.Y
+sudo apt-get install -y postgresql libpq-dev
 ```
 
 ####Remove Old Ruby
