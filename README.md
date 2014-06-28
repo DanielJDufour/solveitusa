@@ -108,3 +108,10 @@ Move in the example data
 ```
 rake db:migrate
 ```
+
+
+###Run the Rails app
+```
+rake test
+passenger start
+```
