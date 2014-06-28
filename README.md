@@ -11,6 +11,9 @@ sudo apt-get update
 sudo apt-get install -y curl vim git
 ```
 
+####Install PostgreSQL
+sudo apt-get install postgresql
+
 ####Remove Old Ruby
 Ubuntu sometimes ships with a messed-up version of ruby
 ```
@@ -27,7 +30,7 @@ source /home/test/.rvm/scripts/rvm
 
 ####Install Ruby
 ```
-curl -L https://get.rvm.io | bash -s stable --ruby
+curl -L https://get.rvm.io | bash -s stable --ruby=2.1.1
 ```
 
 ###Install Rails
