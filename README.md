@@ -47,7 +47,9 @@ git clone http://github.com/DanielJDufour/solveitusa.git ~/solveitusa
 ```
 
 ###Install Gems
+To install the Gems, first change into the solveitusa directory. 
 ```
+cd ~/solveitusa
 bundle update
 bundle install
 ```
