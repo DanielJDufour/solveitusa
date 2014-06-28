@@ -9,4 +9,13 @@ class User < ActiveRecord::Base
     email
   end
 
+  # Per https://github.com/radar/forem
+  def forem_name
+    name
+  end
+
+  def forem_email
+    email_address
+  end
+
 end
