@@ -35,15 +35,10 @@ sudo rm -rf /usr/share/ruby-rvm /etc/rmvrc /etc/profile.d/rvm.sh
 rm -rf ~/.rvm* ~/.gem/ ~/.bundle*
 ```
 
-####Install Ruby Version Manager (RVM)
-```
-curl -L https://get.rvm.io | bash -s stable
-source /home/test/.rvm/scripts/rvm
-```
-
-####Install Ruby
+####Install Ruby Version Manager (RVM) and Ruby
 ```
 curl -L https://get.rvm.io | bash -s stable --ruby
+source /home/test/.rvm/scripts/rvm
 ```
 
 ###Install Rails
