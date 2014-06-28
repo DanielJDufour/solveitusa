@@ -12,7 +12,9 @@ sudo apt-get install -y curl vim git
 ```
 
 ####Install PostgreSQL
+```
 sudo apt-get install postgresql
+```
 
 ####Remove Old Ruby
 Ubuntu sometimes ships with a messed-up version of ruby
