@@ -111,7 +111,7 @@ rake db:migrate
 
 ###Setup Forum
 Once you type the command below, the termainl will ask you a series of questions.
-Just click enter and the default values will be entered.
+Just click enter and the default values will be entered.  Don't overwrite scss file.
 ```
 rails g forem:install
 ```
