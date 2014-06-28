@@ -43,7 +43,7 @@ source /home/test/.rvm/scripts/rvm
 
 ####Install Ruby
 ```
-curl -L https://get.rvm.io | bash -s stable --ruby=2.1.1
+curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
 ###Install Rails
