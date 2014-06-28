@@ -100,12 +100,8 @@ rails g devise user
 ```
 
 ###Setup Database
-Create the tables, schema, and fill the database with example seed data:
 ```
 rake db:setup
-```
-Move in the example data
-```
 rake db:migrate
 ```
 
