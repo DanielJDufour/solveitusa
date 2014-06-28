@@ -43,7 +43,7 @@ gem install bundler --no-ri --no-rdoc
 ###Download this Repository
 We recommend placing it in the home directory
 ```
-git clone http://github.com/DanielJDufour/solveitusa.git ~/
+git clone http://github.com/DanielJDufour/solveitusa.git ~/solveitusa
 ```
 
 ###Install Gems
