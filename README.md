@@ -65,7 +65,7 @@ gem install passenger --no-ri --no-rdoc
 ```
 
 ###Set Up Devise
-This setion's instructions are from here: http://guides.railsgirls.com/devise/
 ```
-rails g devise:install
+rails g devise user
+rake db:migrate
 ```
