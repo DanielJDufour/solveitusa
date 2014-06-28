@@ -19,9 +19,11 @@ sudo apt-get install -y postgresql libpq-dev
 ####Create PostgreSQL User
 Create 'solveit' postgreSQL user that Ruby app will use.
 ```
-sudo su - postgres
-psql
-   #postgres-# CREATE ROLE solveit PASSWORD 'password' CREATEDB;
+sudo -u postgres psql
+````
+Within the psql line, type:
+```
+CREATE ROLE solveit PASSWORD 'password' CREATEDB;
 ```
 Type in ```\q``` to quit out of psql command line.
 Then type ```exit``` to exit out of psql user and return to local user.
