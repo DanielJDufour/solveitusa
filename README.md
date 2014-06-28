@@ -109,6 +109,12 @@ Move in the example data
 rake db:migrate
 ```
 
+###Setup Forum
+Once you type the command below, the termainl will ask you a series of questions.
+Just click enter and the default values will be entered.
+```
+rails g forem:install
+```
 
 ###Run the Rails app
 ```
