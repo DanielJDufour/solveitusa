@@ -37,7 +37,7 @@ sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
 ####Restart postgreSQL
 Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
 ```
-sudo service postregres restart
+sudo service postregresql restart
 ```
 
 ####Remove Old Ruby
