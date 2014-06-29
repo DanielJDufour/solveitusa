@@ -23,16 +23,10 @@ sudo -u postgres psql
 ````
 The command line should now start with ```postgres=#```.  Type in the following to create the 'solveit' user, substituting XXX with a password you have chosen. Make sure to include the semi-colon at the end or it won't run.
 ```
-create role solveitusa with createdb login password 'XXX';
+create role solveit with createdb login password 'XXX';
 ```
 After you have created the user enter ```\q``` and this will exit you from the postgreSQL terminal view.  Then, type ```exit``` to exit out of psql user and return to the default user.
 
-
-####Add Password to Database Config File
-Replace the three occurences of 'XXX' in the database.yml file with the same password you have chosen above.  You can open up the database.yml file for editing by typing in the following:
-```
-sudo vim ~/solveitusa/config/database.yml
-```
 
 ####Add md5 password authentication for 'solveit' user
 Now type in the following, which will add a line to the end of the pg_hba.conf file.  This line tells postreSQL to authenticate the 'solveit' user using a password.
@@ -75,6 +69,13 @@ We recommend placing it in the home directory
 ```
 git clone http://github.com/DanielJDufour/solveitusa.git ~/solveitusa
 ```
+
+####Add Password to Database Config File
+Replace the three occurences of 'XXX' in the database.yml file with the same password you have chosen above.  You can open up the database.yml file for editing by typing in the following:
+```
+sudo vim ~/solveitusa/config/database.yml
+```
+
 
 ###Install Gems
 To install the Gems, first change into the solveitusa directory. 
