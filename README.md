@@ -19,7 +19,7 @@ sudo apt-get install -y postgresql libpq-dev
 ####Create PostgreSQL User
 Create 'solveit' postgreSQL user that Ruby app will use.
 ```
-sudo -u postgres psql
+sudo su - postgres
 ````
 Within the psql line, type:
 ```
