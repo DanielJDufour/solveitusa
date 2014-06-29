@@ -17,33 +17,27 @@ sudo apt-get install -y postgresql libpq-dev
 ```
 
 ####Create PostgreSQL User
-Create 'solveit' postgreSQL user that Ruby app will use.
-
-Enter into the postgreSQL terminal.
+In this section, we will create the user 'solveit', which will be used by the Ruby app to talk to the postgreSQL database.  For the first step, we want to enter into the postgreSQL terminal view by typing the following:
 ```
 sudo -u postgres psql
 ````
-Your command line should now start with ```postgres=#```.
-Enter in the following to create the 'solveit' user,
-substituting XXX with a password you have chosen.
-Make sure to include the semi-colon at the end or it won't run.
+The command line should now start with ```postgres=#```.  Type in the following to create the 'solveit' user, substituting XXX with a password you have chosen. Make sure to include the semi-colon at the end or it won't run.
 ```
 create role solveitusa with createdb login password 'XXX';
 ```
+After you have created the user enter ```\q``` and this will exit you from the postgreSQL terminal view.  Then, type ```exit``` to exit out of psql user and return to the default user.
 
-After you have created the user type ```\q``` and then press enter to quit the postgreSQL terminal view.
-Then, type ```exit``` to exit out of psql user and return to the default user.
+Now, replace the three occurences of 'XXX' in the database.yml file with this same password you have chosen.  You can open up the database.yml file for editing by typing in the following:
+```
+sudo vim ~/solveitusa/config/database.yml
+```
 
-Now, replace the three occurences of 'XXX' in the database.yml file with this same password.
-
-Now type in the following, which will add a line to the end of the pg_hba.conf file.
-This line tells postreSQL to authenticate the 'solveit' user using a password.
+Now type in the following, which will add a line to the end of the pg_hba.conf file.  This line tells postreSQL to authenticate the 'solveit' user using a password.
 ```
 sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
 ```
 
 Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
-
 ```
 sudo service postregres restart
 ```
