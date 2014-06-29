@@ -27,16 +27,20 @@ create role solveitusa with createdb login password 'XXX';
 ```
 After you have created the user enter ```\q``` and this will exit you from the postgreSQL terminal view.  Then, type ```exit``` to exit out of psql user and return to the default user.
 
-Now, replace the three occurences of 'XXX' in the database.yml file with this same password you have chosen.  You can open up the database.yml file for editing by typing in the following:
+
+####Add Password to Database Config File
+Replace the three occurences of 'XXX' in the database.yml file with the same password you have chosen above.  You can open up the database.yml file for editing by typing in the following:
 ```
 sudo vim ~/solveitusa/config/database.yml
 ```
 
+####Add md5 password authentication for 'solveit' user
 Now type in the following, which will add a line to the end of the pg_hba.conf file.  This line tells postreSQL to authenticate the 'solveit' user using a password.
 ```
 sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
 ```
 
+####Restart postgreSQL
 Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
 ```
 sudo service postregres restart
