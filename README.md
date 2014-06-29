@@ -28,8 +28,9 @@ CREATE ROLE solveit PASSWORD 'password' CREATEDB;
 Type in ```\q``` to quit out of psql command line.
 Then type ```exit``` to exit out of psql user and return to local user.
 
-Add the following line to pg_hba.conf file
+Add the following line to pg_hba.conf file and then restart Postresql
 ```
+sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
 sudo service postregres restart
 ```
 
