@@ -58,7 +58,7 @@ rm -rf ~/.rvm* ~/.gem/ ~/.bundle*
 
 ####Install Ruby Version Manager (RVM) and Ruby
 ```
-curl -L https://get.rvm.io | bash -s stable --ruby
+curl -L https://get.rvm.io | bash -s stable --ruby=2.1.1
 source /home/test/.rvm/scripts/rvm
 ```
 
