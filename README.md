@@ -25,7 +25,7 @@ The command line should now start with ```postgres=#```.  Type in the following 
 ```
 create role solveit with createdb login password 'XXX';
 ```
-After you have created the user enter ```\q``` and this will exit you from the postgreSQL terminal view.  Then, type ```exit``` to exit out of psql user and return to the default user.
+After you have created the user enter ```\q``` and this will exit you from the postgreSQL terminal view.
 
 
 ####Add md5 password authentication for 'solveit' user
