@@ -28,6 +28,10 @@ CREATE ROLE solveit PASSWORD 'password' CREATEDB;
 Type in ```\q``` to quit out of psql command line.
 Then type ```exit``` to exit out of psql user and return to local user.
 
+Add the following line to pg_hba.conf file
+```
+sudo service postregres restart
+```
 
 ####Remove Old Ruby
 Ubuntu sometimes ships with a messed-up version of ruby.
