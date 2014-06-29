@@ -18,17 +18,26 @@ sudo apt-get install -y postgresql libpq-dev
 
 ####Create PostgreSQL User
 Create 'solveit' postgreSQL user that Ruby app will use.
-```
-sudo su - postgres
-````
-Within the psql line, type:
-```
-CREATE ROLE solveit PASSWORD 'password' CREATEDB;
-```
-Type in ```\q``` to quit out of psql command line.
-Then type ```exit``` to exit out of psql user and return to local user.
 
-Add the following line to pg_hba.conf file and then restart Postresql
+Enter into the postgreSQL terminal.
+```
+sudo -u postgres psql
+````
+Your command line should now start with ```postgres=#```.
+Enter in the following to create the 'solveit' user,
+substituting XXX with a password you have chosen.
+Make sure to include the semi-colon at the end or it won't run.
+```
+create role solveitusa with createdb login password 'XXX';
+```
+
+After you have created the user type ```\q``` and then press enter to quit the postgreSQL terminal view.
+Then, type ```exit``` to exit out of psql user and return to the default user.
+
+Now, replace the three occurences of 'XXX' in the database.yml file with this same password.
+
+Add the following line to pg_hba.conf file and then restart Postresql.
+This line of code tells postreSQL to authenticate the 'solveit' user using a password.
 ```
 sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
 sudo service postregres restart
