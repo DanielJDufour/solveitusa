@@ -36,10 +36,15 @@ Then, type ```exit``` to exit out of psql user and return to the default user.
 
 Now, replace the three occurences of 'XXX' in the database.yml file with this same password.
 
-Add the following line to pg_hba.conf file and then restart Postresql.
-This line of code tells postreSQL to authenticate the 'solveit' user using a password.
+Now type in the following, which will add a line to the end of the pg_hba.conf file.
+This line tells postreSQL to authenticate the 'solveit' user using a password.
 ```
 sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
+```
+
+Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
+
+```
 sudo service postregres restart
 ```
 
