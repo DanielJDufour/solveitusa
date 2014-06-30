@@ -29,10 +29,14 @@ After you have created the user enter ```\q``` and this will exit you from the p
 
 
 ####Add md5 password authentication for 'solveit' user
-Now type in the following, which will add a line to the end of the pg_hba.conf file.  This line tells postreSQL to authenticate the 'solveit' user using a password.
+Now open up pg_hba.conf.
 ```
-sudo sed -i '$ a\local all solveit md5' /etc/postgresql/9.3./main/pg_hba.conf
+sudo vim /etc/postgresql/9.3./main/pg_hba.conf
 ```
+
+Inser a new line underneath ```local all postgress peer``` and add to it ```local all solveit md5```
+
+This line tells postreSQL to authenticate the 'solveit' user using a password.
 
 ####Restart postgreSQL
 Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
