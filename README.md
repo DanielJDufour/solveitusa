@@ -31,7 +31,7 @@ After you have created the user enter ```\q``` and this will exit you from the p
 ####Add md5 password authentication for 'solveit' user
 Now open up pg_hba.conf.
 ```
-sudo vim /etc/postgresql/9.3./main/pg_hba.conf
+sudo vim /etc/postgresql/9.3/main/pg_hba.conf
 ```
 
 Inser a new line underneath ```local all postgress peer``` and add to it ```local all solveit md5```
