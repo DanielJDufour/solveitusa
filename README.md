@@ -41,7 +41,7 @@ This line tells postreSQL to authenticate the 'solveit' user using a password.
 ####Restart postgreSQL
 Restart the postgreSQL service, so it updates with the change you just made to pg_hba.conf.
 ```
-sudo service postregresql restart
+sudo service postgresql restart
 ```
 
 ####Remove Old Ruby
