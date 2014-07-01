@@ -99,6 +99,12 @@ gem install passenger --no-ri --no-rdoc
 rails g devise user
 ```
 
+####Delete Extraneous File
+The user model has already been created so delete the extraneous migration as follows:
+```
+sudo rm ~/solveitusa/db/migrate/[Name of newest migration that ends with _add_devise_to_users.rb
+```
+
 ###Setup Database
 ```
 rake db:setup
