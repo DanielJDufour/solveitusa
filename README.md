@@ -19,7 +19,7 @@ sudo apt-get install -y postgresql libpq-dev
 ####Create PostgreSQL User
 In this section, we will create the user 'solveit', which will be used by the Ruby app to talk to the postgreSQL database.  This will prompt you to type in a password.  Make sure to remember it because we will use it later.
 ```
-sudo -u postgres createuser --pwprompt --createdb --login --echo
+sudo -u postgres createuser --pwprompt --createdb --login --echo solveit
 ```
 
 ####Add md5 password authentication for 'solveit' user
