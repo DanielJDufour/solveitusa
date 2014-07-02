@@ -74,7 +74,6 @@ Replace the three occurences of 'XXX' in the database.yml file with the same pas
 sudo vim ~/solveitusa/config/database.yml
 ```
 
-
 ###Install Gems
 To install the Gems, first change into the solveitusa directory. 
 ```
@@ -88,28 +87,10 @@ bundle install
 gem install passenger --no-ri --no-rdoc
 ```
 
-###Set Up Devise
-```
-rails g devise user
-```
-
-####Delete Extraneous File
-The user model has already been created so delete the extraneous migration as follows:
-```
-sudo rm ~/solveitusa/db/migrate/[Name of newest migration that ends with _add_devise_to_users.rb
-```
-
 ###Setup Database
 ```
 rake db:setup
 rake db:migrate
-```
-
-###Setup Forum
-Once you type the command below, the termainl will ask you a series of questions.
-Just click enter and the default values will be entered.  Don't overwrite scss file.
-```
-rails g forem:install
 ```
 
 ###Run the Rails app
