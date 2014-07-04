@@ -67,7 +67,7 @@
 										  <%= link_to "Forgot your password?", new_password_path(:user) %>
 										</div>
 										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
-										<div class="button">Cancel</div>
+										<%= f.reset 'Cancel', class: "button", id: "button-cancel" %>
 									</div>
 								</div>
 						<% end %>
