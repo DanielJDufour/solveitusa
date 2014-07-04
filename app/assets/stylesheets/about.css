@@ -1,7 +1,7 @@
 body{margin:0}
 #mission{margin-bottom: 0pt; font-family: Futura; font-size: 40px; text-align: center}
 #missionp{text-align:center; font-family:calibri; font-size:20px}
-#missioncontainer{max-width:800px; margin:0 auto;}
+#missioncontainer{max-width:800px; margin:0 auto; padding: 25px;}
 .personcontainer{vertical-align: middle;}
 .personcontainer-inner{padding: 15px; height: 100%; text-align: center; font-family: calibri; margin: 0 auto; font-size:15px; vertical-align: middle;}
 #dufourcontainer{background-color: #ce93d8;}
