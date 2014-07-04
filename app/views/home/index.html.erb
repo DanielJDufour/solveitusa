@@ -15,6 +15,9 @@
 			<li class='header_item'><a href='/contact' id ='contact'>Contact</a></li>
 		<div id ='menuright'>
 			<li class ="header_item right_item">
+				<% if user_signed_in? %>
+					<%= link_to('Edit registration', edit_user_registration_path) %>
+				<% else %>
 				<div id='signup'>Signup</div>
 
 					<div id="modal-container_signup" class = "modal-container">
@@ -32,8 +35,7 @@
 							</div>
 						</div>
 					</div>
-	
-				
+				<% end %>	
 			</li>
 			<li class ="header_item right_item">
 				<% if user_signed_in? %>
