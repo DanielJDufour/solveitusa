@@ -174,10 +174,7 @@ a:hover {
   font-size: 32px;
   padding-top: 45px;
 }
-.icon {
-    padding: 10px;
-    padding-left: 50px;
-}
+.icon {padding: 10px;}
 .title {
     text-align: center;
     font-weight: bold;
