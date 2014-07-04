@@ -145,3 +145,6 @@ float: left;
 @media (max-width: 600px){.header_item{margin:10px 5px;}}
 @media (max-width: 500px){.header_item{margin:10px 2px;}}
 @media (max-width: 400px){.header_item{margin:10px 0px;}}
+
+.alert{text-align: center; margin: 0 auto; width: 200px; top: 75px; z-index: 9999999999;}
+.alert-success{background-color: green;} 
