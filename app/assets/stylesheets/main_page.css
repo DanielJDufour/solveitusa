@@ -152,7 +152,7 @@ a:hover {
 .icon-image {width: 100%; height: auto; max-width: 100px;}
 .info {display: inline-block; height: 300px; width: 200px; padding: 20px; background-color: #ce93d8; border-radius: 25px;
 margin: 10px; box-shadow: 3px 3px 5px 6px #ccc; vertical-align: top; cursor: pointer;}
-.info:hover {margin-top: 5px;}
+.info:hover {margin-top: 5px; margin-bottom: 15px;}
 
 .underline {
     text-decoration: underline;
