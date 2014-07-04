@@ -70,10 +70,8 @@
 				<% end %>
 			</li>
 		</ul>
-		<div id = "alert-bar">
-			<% if notice %><p class="alert alert-success"><%= notice %></p><% end %>
-			<% if alert %><p class="alert alert-danger"><%= alert %></p><% end %>	
-		</div>
+		<% if notice %><div id = "alert-bar"><p class="alert alert-success"><%= notice %></p></div><% end %>
+		<% if alert %><div id = "alert-bar"><p class="alert alert-danger"><%= alert %></p></div><% end %>	
 	</div>
 	
 	<%= yield %>
