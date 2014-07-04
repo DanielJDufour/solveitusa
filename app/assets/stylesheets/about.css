@@ -44,22 +44,8 @@ float: left;
     left: 0;
 }
 
-.input {
-    width: 400px;
-    height: 185px;
-}
-.input1 {
-    width: 400px;
-}
-
-#logo {
-    font-size: 35px;
-    color: #FF684F;
-    font-family: tahoma;
-}
-#Boards{
-    padding-left:20px
-        
-}
-
+.input {width: 400px; height: 185px;}
+.input1 {width: 400px;}
+#logo {font-size: 35px; color: #FF684F; font-family: tahoma;}
+#boards{padding-left:20px; text-align: center;}
 #middle-about{padding-top: 75px;}
