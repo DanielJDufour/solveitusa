@@ -28,13 +28,13 @@ float: left;
     0% {
     }
     25% {
-        transform: translateY(-8px);
+        transform: translateY(-4px);
     }    
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     75% {
-        transform: translateY(-8px);
+        transform: translateY(-4px);
     }
     100% {
     }
