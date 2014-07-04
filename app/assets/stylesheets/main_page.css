@@ -174,7 +174,7 @@ margin: 10px; box-shadow: 3px 3px 5px 6px #ccc;}
   font-size: 32px;
   padding-top: 45px;
 }
-.icon {padding: 10px;}
+.icon {padding: 10px; text-align: center;}
 .title {
     text-align: center;
     font-weight: bold;
