@@ -6,6 +6,15 @@
 	<script src="assets/script.js"></script>
 </head>
 <body>
+<%= form_for(:user, :url => session_path(:user)) do |f| %>
+  <%= f.text_field :email %>
+  <%= f.password_field :password %>
+  <%= f.check_box :remember_me %>
+  <%= f.label :remember_me %>
+  <%= f.submit 'Sign in' %>
+  <%= link_to "Forgot your password?", new_password_path(:user) %>
+<% end %>
+
 	<div class="header">
 		<ul id="menu">
 			<!-- need to add the links, change accordingly to match name of your file -->
