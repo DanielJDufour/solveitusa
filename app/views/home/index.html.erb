@@ -25,37 +25,45 @@
 		<div id ='menuright'>
 			<li class ="header_item right_item">
 				<div id='signup'>Signup</div>
-				<div id="modal-container_signup" class = "modal-container">
-					<div id="modal-overlay_signup" class="modal-overlay"></div>
-					<div class="modal-box-wrapper">
-						<div class="modal-box">
-							<div class="modal-header">Signup</div>
-							<div class="modal-content">
-								<input type="text" class="inputbox" placeholder="Enter new username" />
-								<input type="password" class="inputbox" placeholder="Enter new password" />
-								<input type="password" class="inputbox" placeholder="Re-Enter new password" />
+
+					<div id="modal-container_signup" class = "modal-container">
+						<div id="modal-overlay_signup" class="modal-overlay"></div>
+						<div class="modal-box-wrapper">
+							<div class="modal-box">
+								<div class="modal-header">Signup</div>
+								<div class="modal-content">
+									<input type="text" class="inputbox" placeholder="Enter new username" />
+									<input type="password" class="inputbox" placeholder="Enter new password" />
+									<input type="password" class="inputbox" placeholder="Re-Enter new password" />
+								</div>
+								<div class="button">Submit</div>
+								<div class="button">Cancel</div>
 							</div>
-							<div class="button">Submit</div>
-							<div class="button">Cancel</div>
 						</div>
 					</div>
-				</div>
+	
+				
 			</li>
 			<li class ="header_item right_item">
 				<div id='login'>Login</div>
-				<div id="modal-container_login" class="modal-container">
-					<div id="modal-overlay_login" class="modal-overlay"></div>
-					<div class="modal-box-wrapper">
-						<div class="modal-box">
-							<div class="modal-header">Login</div>
-							<div class="modal-content">
-								<input type="text" class="inputbox" placeholder="Enter username" />
-								<input type="password" class="inputbox" placeholder="Enter password" />
+					<div id="modal-container_login" class="modal-container">
+						<%= form_for(:user, :url => session_path(:user)) do |f| %>
+							<div id="modal-overlay_login" class="modal-overlay"></div>
+							<div class="modal-box-wrapper">
+								<div class="modal-box">
+									<div class="modal-header">Sign-in</div>
+									<div class="modal-content">
+										<%= f.text_field :email, class: "inputbox" %>
+									  <%= f.password_field :password, class: "inputbox" %>
+									  <%= f.check_box :remember_me %>
+									  <%= f.label :remember_me %>
+									  <%= link_to "Forgot your password?", new_password_path(:user) %>
+									</div>
+									<%= f.submit 'Sign in', class: "button"  %>
+									<div class="button">Cancel</div>
+								</div>
 							</div>
-							<div class="button">Submit</div>
-							<div class="button">Cancel</div>
-						</div>
-					</div>
+					<% end %>
 				</div>
 			</li>
 		</div>
