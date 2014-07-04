@@ -5,7 +5,7 @@ body{margin:0}
 .personcontainer{vertical-align: middle;}
 .personcontainer-inner{padding: 15px; height: 100%; text-align: center; font-family: calibri; margin: 0 auto; font-size:15px; vertical-align: middle;}
 #dufourcontainer{background-color: #ce93d8;}
-#img1container{width:350px; height: 100%; display: inline-block; vertical-align: middle;}
+#imgcontainer{width:350px; height: 100%; display: inline-block; vertical-align: middle;}
 #img1{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white; vertical-align: middle;}
 #font{font-size: 20px}
 #textwrapper{height:100%; width: 500px; display: inline-block; font-size: 15px;vertical-align: middle;}
