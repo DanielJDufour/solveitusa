@@ -1,16 +1,15 @@
 body{margin:0}
 #mission{margin-bottom: 0pt; font-family: Futura; font-size: 40px; text-align: center}
 #missionp{text-align:center; font-family:calibri; font-size:20px}
-#missioncontainer{min-width:800px}
-#dufourcontainer{background-color: #00CCFF; height:320px; min-width: 800px}
-#dufourcontainer2{text-align: left; height: 320px; width: 800px;font-family: calibri; margin-right:auto; margin-left:auto; font-size:15px;}
-#img1container{padding-top:5px; width:350px; height: 320px; float:left}
+#missioncontainer{max-width:800px; margin:0 auto;}
+.personcontainer{height: 400px; vertical-align: middle;}
+.personcontainer-inner{height: 400px; text-align: left; width: 800px; font-family: calibri; margin: 0 auto; font-size:15px; vertical-align: middle;}
+#dufourcontainer{background-color: #ce93d8;}
+#img1container{padding-top:5px; width:350px; height: 320px; display: inline-block; vertical-align: middle;}
 #img1{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white}
 #font{font-size: 20px}
-#text1wrapper{height:300px; padding-top:20px;max-width: 800px; min-width: 700px}
-#goldbergcontainer{background-color: #FFBD5C; height:320px; min-width:800px}
-#goldbergcontainer2{text-align: right; height: 320px; width: 800px;font-family: calibri; margin-right:auto; margin-left:auto; font-size:15px;}
-#img2container{padding-top:5px; width:350px; height: 320px; float:right}
+#text1wrapper{height:300px; padding-top:20px;width: 500px; display: inline-block;}
+#goldbergcontainer{background-color: #FFBD5C;}
 #img2{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white}
 #text2wrapper{height:300px; padding-top:20px;max-width: 800px; min-width: 700px}
 
