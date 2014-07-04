@@ -2,7 +2,7 @@ body{margin:0}
 #mission{margin-bottom: 0pt; font-family: Futura; font-size: 40px; text-align: center}
 #missionp{text-align:center; font-family:calibri; font-size:20px}
 #missioncontainer{max-width:800px; margin:0 auto;}
-.personcontainer{height: 400px; vertical-align: middle;}
+.personcontainer{vertical-align: middle;}
 .personcontainer-inner{padding: 15px; height: 100%; text-align: center; font-family: calibri; margin: 0 auto; font-size:15px; vertical-align: middle;}
 #dufourcontainer{background-color: #ce93d8;}
 #img1container{width:350px; height: 100%; display: inline-block; vertical-align: middle;}
@@ -10,7 +10,7 @@ body{margin:0}
 #font{font-size: 20px}
 #textwrapper{height:100%; width: 500px; display: inline-block; font-size: 15px;vertical-align: middle;}
 #goldbergcontainer{background-color: #FFBD5C;}
-#img2{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white}
+#img2{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white; vertical-align: middle;}
 
 ul {
 font-family: Arial, Verdana;
