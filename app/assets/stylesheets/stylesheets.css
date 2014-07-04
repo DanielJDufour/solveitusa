@@ -152,6 +152,6 @@ float: left;
 }
 
 @media (max-width: 700px){.header_item{margin: 10px 13px; }}
-@media (max-width: 600px){.header_item{margin:10px 10px;}}
-@media (max-width: 500px){.header_item{margin:10px 8px;}}
-@media (max-width: 400px){.header_item{margin:10px 4px;}}
+@media (max-width: 600px){.header_item{margin:10px 5px;}}
+@media (max-width: 500px){.header_item{margin:10px 2px;}}
+@media (max-width: 400px){.header_item{margin:10px 0px;}}
