@@ -182,7 +182,4 @@ margin: 10px; box-shadow: 3px 3px 5px 6px #ccc;}
     padding: 15px;
     color: black;
 }
-.content {
-    text-align: center;
-    font-size: 14px;
-}
+.content {text-align: left; font-size: 14px;}
