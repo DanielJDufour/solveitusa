@@ -94,12 +94,14 @@ float: left;
     background: transparent;
     margin: 0px;
     margin-bottom: 15px;
-    width: 460px;
+    width: 100%;
     font-size: 12px;
     font-weight: 700;
     color: black;
     cursor: pointer;
     margin-left: 20;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     }
 #modal-box {
     margin-left: auto;
@@ -108,6 +110,7 @@ float: left;
     width: 500;
     height: 260;
     background-color: whitesmoke;
+    padding: 15px;
 }
 .button {
     display: inline-block;
