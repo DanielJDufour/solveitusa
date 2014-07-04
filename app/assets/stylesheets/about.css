@@ -8,7 +8,7 @@ body{margin:0}
 #imgcontainer{width:350px; height: 100%; display: inline-block; vertical-align: middle;}
 #img1{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white; vertical-align: middle;}
 #font{font-size: 20px}
-#textwrapper{height:100%; width: 500px; display: inline-block; font-size: 15px;vertical-align: middle;}
+#textwrapper{height:100%; width: 500px; display: inline-block; font-size: 15px;vertical-align: middle; text-align: left;}
 #goldbergcontainer{background-color: #FFBD5C;}
 #img2{-webkit-border-radius: 50%; border-radius: 50%; -moz-border-radius:50%; border: 3px solid white; vertical-align: middle;}
 
