@@ -36,16 +36,7 @@ float: left;
     text-align: center;
 }
 
-.right_item {
-    margin-top: 5px;
-    display: inline-block;
-    color: white;
-    font-size: 16px;
-    float: right;
-    padding-left: 20px;
-    padding-right: 30px;
-    padding-top: 5px;
-}
+.right_item {display: inline-block; float: right;}
 
 #logo {
     font-size: 35px;
