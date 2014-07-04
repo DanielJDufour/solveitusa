@@ -1,72 +1,3 @@
-<head>
-	<title>Solve It USA</title>
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="assets/main_page.css" />
-	<script src="assets/jquery-1.9.1.js"></script>
-	<script src="assets/script.js"></script>
-</head>
-<body>
-	<div class="header">
-		<ul id="menu">
-			<!-- need to add the links, change accordingly to match name of your file -->
-			<li class='header_item'><a href='/'/ id = 'home'>Home</a></li>
-			<li class='header_item'><a href='/about'/ id ='about'>About</a></li>
-			<li class='header_item' id = 'forums'><%= link_to t('forem.forum.forums'), forem.forums_path %></li>
-			<li class='header_item'><a href='/contact' id ='contact'>Contact</a></li>
-		<div id ='menuright'>
-			<li class ="header_item right_item">
-				<% if user_signed_in? %>
-					<%= link_to('Edit registration', edit_user_registration_path) %>
-				<% else %>
-				<div id='signup'>Signup</div>
-
-					<div id="modal-container_signup" class = "modal-container">
-						<div id="modal-overlay_signup" class="modal-overlay"></div>
-						<div class="modal-box-wrapper">
-							<div class="modal-box">
-								<div class="modal-header">Signup</div>
-								<div class="modal-content">
-									<input type="text" class="inputbox" placeholder="Enter new username" />
-									<input type="password" class="inputbox" placeholder="Enter new password" />
-									<input type="password" class="inputbox" placeholder="Re-Enter new password" />
-								</div>
-								<div class="button">Submit</div>
-								<div class="button">Cancel</div>
-							</div>
-						</div>
-					</div>
-				<% end %>	
-			</li>
-			<li class ="header_item right_item">
-				<% if user_signed_in? %>
-					<%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "logout") %>        
-				<% else %>
-					<div id='login'>Login</div>
-						<div id="modal-container_login" class="modal-container">
-							<%= form_for(:user, :url => session_path(:user)) do |f| %>
-								<div id="modal-overlay_login" class="modal-overlay"></div>
-								<div class="modal-box-wrapper">
-									<div class="modal-box">
-										<div class="modal-header">Sign-in</div>
-										<div class="modal-content">
-											<%= f.text_field :email, class: "inputbox" %>
-										  <%= f.password_field :password, class: "inputbox" %>
-										  <%= f.check_box :remember_me %>
-										  <%= f.label :remember_me %>
-										  </br>
-										  <%= link_to "Forgot your password?", new_password_path(:user) %>
-										</div>
-										<%= f.submit 'Sign in', class: "button"  %>
-										<div class="button">Cancel</div>
-									</div>
-								</div>
-						<% end %>
-					</div>
-				<% end %>
-			</li>
-		</div>
-		</ul>
-	</div>
 	<div id ="middle-about">
 		<div id="missioncontainer">
 	        <h1 id="mission">Mission Statement</h1>
@@ -107,6 +38,5 @@
 	    <h1 style="font-family: futura">Board of Advisors</h1>
 	    <p style="font-family: calibri; font-size: 20px"><i>Forthcoming</i></p>
 	    </div>
-	</div>	    
-    </body>
+	</div>
     
