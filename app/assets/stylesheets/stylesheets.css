@@ -37,9 +37,8 @@ float: left;
     opacity: .85;
 }
 
-#menu a{
-    text-decoration: none;
-}
+#menu a{text-decoration: none;}
+#menu a:hover{border-bottom: 1px solid;}
 #footer{
     height: 30px;
     bottom: 0;
