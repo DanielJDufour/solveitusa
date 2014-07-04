@@ -70,17 +70,13 @@
 				<% end %>
 			</li>
 		</ul>
+		<div id = "alert-bar">
+			<% if notice %><p class="alert alert-success"><%= notice %></p><% end %>
+			<% if alert %><p class="alert alert-danger"><%= alert %></p><% end %>	
+		</div>
 	</div>
 	
 	<%= yield %>
-	
-	<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-	
 	<div id="footer">
 		<h7><div id='copyright'>copyright &#169; Solve It USA</div></h7>
 	</div>
