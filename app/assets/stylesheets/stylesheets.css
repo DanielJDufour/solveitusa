@@ -47,7 +47,7 @@ float: left;
 }
 
 /*Modal*/
-#modal-container_login {width: 100%; height: auto; position: fixed; z-index: 100; display: none; max-width: 300px;}
+#modal-container_login {width: 100%; height: auto; position: absolute; z-index: 100; display: none; max-width: 300px; right: 45px; margin-top: 10px;}
 #modal-container_signup {
     width: 100%;
     height: 100%;
