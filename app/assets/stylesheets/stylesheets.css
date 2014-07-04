@@ -86,9 +86,11 @@ ul li {display: block; position: relative; float: left;}
 .alert-success{color: white;}
 @-webkit-keyframes slideDown {
     0%, 100% { -webkit-transform: translateY(-100px); }
+    5%, 95% { -webkit-transform: translateY(-75px); }
     10%, 90% { -webkit-transform: translateY(0px); }
 }
 @-moz-keyframes slideDown {
     0%, 100% { -moz-transform: translateY(-100px); }
+    5%, 95% { -webkit-transform: translateY(-75px); }
     10%, 90% { -moz-transform: translateY(0px); }
 }
