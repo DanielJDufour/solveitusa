@@ -151,7 +151,8 @@ a:hover {
   height: 150px;
 }
 .icon-image {
-  height: 80px;
+  width: 100%;
+  height: auto;
 }
 .info {
   float: left;
