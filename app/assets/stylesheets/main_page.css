@@ -154,7 +154,7 @@ a:hover {
   width: 100%;
   height: auto;
 }
-.info {display: inline-block; height: 300px; width: 20%; padding: 20px; background-color: #ce93d8; border-radius: 25px;}
+.info {display: inline-block; height: 300px; width: 200px; padding: 20px; background-color: #ce93d8; border-radius: 25px; margin: 10px;}
 .underline {
     text-decoration: underline;
     color: #e5725b;
