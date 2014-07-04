@@ -15,19 +15,6 @@ position: relative;
 float: left;
 }
 
-#footer{
-    height: 30px;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(47,47,47,0.98);
-}
-
-#copyright{
-    color:white;
-    font-size: 15px;
-    text-align: center;
-}
-
 #logo {
     font-size: 35px;
     color: #FF684F;
