@@ -42,18 +42,8 @@ float: left;
 }
 #menu a:hover, #login:hover, #signup:hover{color: #ff684f; border-bottom: 1px solid #ff684f;}
 
-#footer{
-    height: 30px;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(47,47,47,0.98);
-}
-
-#copyright{
-    color:white;
-    font-size: 15px;
-    text-align: center;
-}
+#footer{height: 30px; bottom: 0; width: 100%; background-color: #006064;}
+#copyright{color:white; font-size: 15px; text-align: center; padding: 1px;}
 
 .right_item {display: inline-block; float: right;}
 
