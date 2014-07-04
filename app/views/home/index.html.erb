@@ -37,9 +37,7 @@
 			</li>
 			<li class ="header_item right_item">
 				<% if user_signed_in? %>
-					<li>
-						<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-					</li>
+					<%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "logout") %>        
 				<% else %>
 					<div id='login'>Login</div>
 						<div id="modal-container_login" class="modal-container">
