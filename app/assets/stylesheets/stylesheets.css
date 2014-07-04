@@ -32,6 +32,7 @@ float: left;
     }
     75% {
         transform: translateY(-8px);
+    }
     100% {
     }
 }
