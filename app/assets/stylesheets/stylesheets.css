@@ -30,12 +30,8 @@ float: left;
     50% {
         transform: translateY(-10px);
     }
-    55% {
-    }
-    65% {
-    }
-    95% {
-    }
+    75% {
+        transform: translateY(-8px);
     100% {
     }
 }
