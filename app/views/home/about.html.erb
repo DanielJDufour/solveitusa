@@ -6,24 +6,21 @@
         
     </head>
     <body>
-        <div class="Headers">
+	<div class="header">
 		<ul id="menu">
-			<li id='logo'>SolveItUsa</li>
-			<li class='header_item'><a href='/'/><div id ='home'>Home</div></a></li>
-			<li class='header_item'><a href='/about'/><div id ='about'>About</div></a></li>
-			<li class='header_item'><div id = 'forums'><%= link_to t('forem.forum.forums'), forem.forums_path %></div></li>
-			<li class='header_item'><a href='/contact'/><div id ='contact'>Contact</div></a></li>
+			<!-- need to add the links, change accordingly to match name of your file -->
+			<li class='header_item'><a href='/'/ id = 'home'>Home</a></li>
+			<li class='header_item'><a href='/about'/ id ='about'>About</a></li>
+			<li class='header_item' id = 'forums'><%= link_to t('forem.forum.forums'), forem.forums_path %></li>
+			<li class='header_item'><a href='/contact' id ='contact'>Contact</a></li>
 		<div id ='menuright'>
-			<li class ="right_item"><div id='signup'>Signup</div></li>
-
+			<li class ="header_item right_item"><div id='signup'>Signup</div></li>
 			<div id="modal-container_signup">
 				<div id="modal-overlay_signup"></div>
 				<div id="modal-box-wrapper">
 					<div id="modal-box">
-						<div id="modal-header">
-							Signup
-						</div>
-							<div id="modal-content">
+						<div id="modal-header">Signup</div>
+						<div id="modal-content">
 							<input type="text" id="inputbox" placeholder="Enter new username" />
 							<input type="password" id="inputbox" placeholder="Enter new password" />
 							<input type="password" id="inputbox" placeholder="Re-Enter new password" />
@@ -38,7 +35,7 @@
 				</div>
 			</div>
 			
-			<li class ="right_item"><div id='login'>Login</div></li>
+			<li class ="header_item right_item"><div id='login'>Login</div></li>
 
 			<div id="modal-container_login">
 				<div id="modal-overlay_login"></div>
@@ -60,11 +57,10 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		</ul>
 	</div>
-        <div id="missioncontainer">
+	<div id="missioncontainer">
         <h1 id="mission">Mission Statement</h1>
         <hr>
         <p id="missionp">To provide an online space for national dialogue where citizens come together to learn about, discuss and solve our shared national problems.</p>
