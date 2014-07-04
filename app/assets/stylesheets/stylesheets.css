@@ -27,6 +27,9 @@ float: left;
 @keyframes jump {  
     0% {
     }
+    25% {
+        transform: translateY(-8px);
+    }    
     50% {
         transform: translateY(-10px);
     }
