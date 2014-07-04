@@ -81,19 +81,6 @@ float: left;
     margin-bottom: 20;
     padding-top: 20;
 }
-#inputbox {
-    border: 1px solid black;
-    padding: 10px;
-    background: transparent;
-    margin: 0px;
-    margin-bottom: 15px;
-    width: 460px;
-    font-size: 12px;
-    font-weight: 700;
-    color: black;
-    cursor: pointer;
-    margin-left: 20;
-    }
 #modal-box {
     margin-left: auto;
     margin-right: auto;
