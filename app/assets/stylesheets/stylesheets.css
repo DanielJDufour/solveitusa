@@ -26,27 +26,17 @@ float: left;
 #signup{animation: jump 1s infinite;}
 @keyframes jump {  
     0% {
-        top: 0;
     }
     50% {
-        top: 140px;
-        height: 140px;
+        transform: translateY(-10px);
     }
     55% {
-        top: 160px; 
-        height: 120px; 
-        border-radius: 70px / 60px;
     }
     65% {
-        top: 120px; 
-        height: 140px; 
-        border-radius: 70px;
     }
     95% {
-        top: 0;
     }
     100% {
-        top: 0;
     }
 }
 #menu a:hover, #login:hover, #signup:hover{color: #ff684f; border-bottom: 1px solid #ff684f;}
