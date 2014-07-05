@@ -36,11 +36,12 @@
 								<div class="modal-box">
 									<div class="modal-header">Signup</div>
 									<div class="modal-content">
-										  <%= f.text_field :email, class: "inputbox" %>
-										  <%= f.password_field :password, class: "inputbox" %>
+										<%= f.text_field :email, class: "inputbox" %>
+										<%= f.password_field :password, class: "inputbox" %>
 									</div>
 										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
-=								</div>
+										<%= button_tag 'Reset', :type => 'reset', class: "button", id: "button-cancel" %>
+								</div>
 							</div>
 						</div>
 					<% end %>
