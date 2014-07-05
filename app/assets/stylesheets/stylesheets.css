@@ -35,9 +35,8 @@ ul li {display: block; position: relative; float: left;}
     }
 
 .input {max-width: 400px; height: 185px; width: 100%;}
-.input1 {
-    width: 400px;
-}
+.input1 {width: 400px;}
+input{max-width: 100%;}
 #header {font-size: 50px; position: fixed; width: 100%; top: 0;}
 
 .form {margin-left: auto; margin-right: auto;}
