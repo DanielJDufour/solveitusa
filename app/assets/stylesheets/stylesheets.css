@@ -1,4 +1,4 @@
-body {margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12pt; background-color: whitesmoke;}
+body {margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12pt; background-color: whitesmoke; padding-top:75px;}
 
 /*header and footer stuff*/
 ul {font-family: Arial, Verdana; font-size: 20px; margin: 0; padding: 0; list-style: none;}
@@ -41,7 +41,7 @@ ul li {display: block; position: relative; float: left;}
 .input1 {
     width: 400px;
 }
-#header {font-size: 50px; position: fixed; width: 100%;}
+#header {font-size: 50px; position: fixed; width: 100%; top: 0;}
 
 .form {margin-left: auto; margin-right: auto;}
 
