@@ -28,23 +28,25 @@
 				<% if user_signed_in? %>
 					<%= link_to('Edit registration', edit_user_registration_path) %>
 				<% else %>
-				<div id='signup'>Signup</div>
-
-					<div id="modal-container_signup" class = "modal-container">
-						<div id="modal-overlay_signup" class="modal-overlay"></div>
-						<div class="modal-box-wrapper">
-							<div class="modal-box">
-								<div class="modal-header">Signup</div>
-								<div class="modal-content">
-									<input type="text" class="inputbox" placeholder="Enter new username" />
-									<input type="password" class="inputbox" placeholder="Enter new password" />
-									<input type="password" class="inputbox" placeholder="Re-Enter new password" />
+					<div id='signup'>Signup</div>
+					<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+						<div id="modal-container_signup" class = "modal-container">
+							<div id="modal-overlay_signup" class="modal-overlay"></div>
+							<div class="modal-box-wrapper">
+								<div class="modal-box">
+									<div class="modal-header">Signup</div>
+										<%= f.error_notification %>
+									<div class="modal-content">
+										<%= f.input :email, required: true, autofocus: true %>
+										<%= f.input :password, required: true %>
+										<%= f.input :password_confirmation, required: true %>
+									</div>
+										<%= f.button :submit, class: "button", id: "button-signup", "Sign up" %>
+										<%= button_tag 'Reset', :type => 'reset', class: "button", id: "button-cancel" %>
 								</div>
-								<div class="button">Submit</div>
-								<div class="button">Cancel</div>
 							</div>
 						</div>
-					</div>
+					<% end %>
 				<% end %>	
 			</li>
 			<li class ="header_item right_item">
