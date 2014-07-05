@@ -30,7 +30,6 @@
 				<% else %>
 					<div id='signup'>Register</div>
 						<%= form_for(:user, :url => registration_path(:user)) do |f| %>
-						<%= f.error_notification %>
 						<div id="modal-container_signup" class = "modal-container">
 							<div id="modal-overlay_signup" class="modal-overlay"></div>
 							<div class="modal-box-wrapper">
