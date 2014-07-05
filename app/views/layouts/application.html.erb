@@ -36,9 +36,8 @@
 								<div class="modal-box">
 									<div class="modal-header">Signup</div>
 									<div class="modal-content">
-										<%= f.input :email, required: true, autofocus: true %>
-										<%= f.input :password, required: true %>
-										<%= f.input :password_confirmation, required: true %>
+										  <%= f.text_field :email, class: "inputbox" %>
+										  <%= f.password_field :password, class: "inputbox" %>
 									</div>
 										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
 =								</div>
