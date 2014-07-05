@@ -1,4 +1,4 @@
-body {margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12pt; background-color: whitesmoke; padding-top:75px;}
+body {margin: 0; font-family: 'Open Sans', sans-serif; font-size: 12pt; background-color: whitesmoke;}
 
 /*header and footer stuff*/
 ul {font-family: Arial, Verdana; font-size: 20px; margin: 0; padding: 0; list-style: none;}
@@ -77,4 +77,4 @@ ul li {display: block; position: relative; float: left;}
     10%, 90% { -moz-transform: translateY(0px); }
 }
 
-.push75px{height:75px;}
+.devise-middle{padding: 75px 15px 15px 15px};
