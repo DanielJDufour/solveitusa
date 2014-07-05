@@ -53,13 +53,13 @@
 				<% if user_signed_in? %>
 					<%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "logout") %>        
 				<% else %>
-					<div id='login'>Login</div>
+					<div id='login'>Sign in</div>
 						<div id="modal-container_login" class="modal-container">
 							<%= form_for(:user, :url => session_path(:user)) do |f| %>
 								<div id="modal-overlay_login" class="modal-overlay"></div>
 								<div class="modal-box-wrapper">
 									<div class="modal-box">
-										<div class="modal-header">Sign-in</div>
+										<div class="modal-header">Sign in</div>
 										<div class="modal-content">
 										  <%= f.text_field :email, class: "inputbox", placeholder: "enter email here" %>
 										  <%= f.password_field :password, class: "inputbox", placeholder: "enter password here" %>
