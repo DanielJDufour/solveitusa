@@ -35,15 +35,13 @@
 							<div class="modal-box-wrapper">
 								<div class="modal-box">
 									<div class="modal-header">Signup</div>
-										<%= f.error_notification %>
 									<div class="modal-content">
 										<%= f.input :email, required: true, autofocus: true %>
 										<%= f.input :password, required: true %>
 										<%= f.input :password_confirmation, required: true %>
 									</div>
-										<%= f.button :submit, class: "button", id: "button-signup", "Sign up" %>
-										<%= button_tag 'Reset', :type => 'reset', class: "button", id: "button-cancel" %>
-								</div>
+										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
+=								</div>
 							</div>
 						</div>
 					<% end %>
