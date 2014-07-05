@@ -36,8 +36,8 @@
 								<div class="modal-box">
 									<div class="modal-header">Signup</div>
 									<div class="modal-content">
-										<%= f.text_field :email, class: "inputbox", placeholder: "enter email address here" %>
-										<%= f.password_field :password, class: "inputbox", placeholder: "enter password" %>
+										<%= f.text_field :email, class: "inputbox", placeholder: "enter email here" %>
+										<%= f.password_field :password, class: "inputbox", placeholder: "enter password here" %>
 									</div>
 										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
 										<%= button_tag 'Reset', :type => 'reset', class: "button", id: "button-cancel" %>
@@ -59,8 +59,8 @@
 									<div class="modal-box">
 										<div class="modal-header">Sign-in</div>
 										<div class="modal-content">
-										  <%= f.text_field :email, class: "inputbox" %>
-										  <%= f.password_field :password, class: "inputbox" %>
+										  <%= f.text_field :email, class: "inputbox", placeholder: "enter email here" %>
+										  <%= f.password_field :password, class: "inputbox", placeholder: "enter password here" %>
 										  <%= f.check_box :remember_me %>
 										  <%= f.label :remember_me %>
 										  </br>
