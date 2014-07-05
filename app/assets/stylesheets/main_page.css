@@ -34,10 +34,7 @@ float: left;
   position: absolute;
   margin-top: -20%;
 }
-#main-text {
-  padding-top: 35px;
-  margin-left: 35%;
-}
+#main-text {padding-top: 35px; margin-left: 35%; text-align: center;}
 #bottom-wrapper {
   background: #031F31;
   height: 150px;
