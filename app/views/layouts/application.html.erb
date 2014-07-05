@@ -29,7 +29,7 @@
 					<%= link_to('Edit registration', edit_user_registration_path) %>
 				<% else %>
 					<div id='signup'>Signup</div>
-					<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+						<%= form_for(:user, :url => registration_path(:user)) do |f| %>
 						<div id="modal-container_signup" class = "modal-container">
 							<div id="modal-overlay_signup" class="modal-overlay"></div>
 							<div class="modal-box-wrapper">
