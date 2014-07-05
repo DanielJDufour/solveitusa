@@ -23,11 +23,7 @@ float: left;
 #main-image {
   width: 100%;
 }
-#title-text {
-  font-size: 48px;
-  font-weight: 600;
-  text-align: center;
-}
+#title-text {font-size: 48px; font-weight: 600; text-align: center; width: 100%; position: absolute;}
 #main-text-wrapper {
   background: rgba(255, 255, 255, 0.75);
   width: 100%;
