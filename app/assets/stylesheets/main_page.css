@@ -26,6 +26,7 @@ float: left;
 #title-text {
   font-size: 48px;
   font-weight: 600;
+  text-align: center;
 }
 #main-text-wrapper {
   background: rgba(255, 255, 255, 0.75);
