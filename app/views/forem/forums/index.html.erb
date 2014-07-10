@@ -15,9 +15,6 @@
 	<script src="assets/jquery-1.9.1.js"></script>
 	<script src="assets/script.js"></script>
 
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
-
 </head>
 <body>
 	<div id="header">
@@ -29,48 +26,51 @@
 			<li class='header_item'><a href='/contact' id ='contact'>Contact</a></li>
 			<li class ="header_item right_item">
 				<% if user_signed_in? %>
-					<%= link_to('Edit registration', edit_user_registration_path) %>
+					<%= link_to('Edit registration', edit_user_registration_path(@user)) %>
 				<% else %>
-				<div id='signup'>Signup</div>
-
-					<div id="modal-container_signup" class = "modal-container">
-						<div id="modal-overlay_signup" class="modal-overlay"></div>
-						<div class="modal-box-wrapper">
-							<div class="modal-box">
-								<div class="modal-header">Signup</div>
-								<div class="modal-content">
-									<input type="text" class="inputbox" placeholder="Enter new username" />
-									<input type="password" class="inputbox" placeholder="Enter new password" />
-									<input type="password" class="inputbox" placeholder="Re-Enter new password" />
+					<div id='signup'>Register</div>
+						<%= form_for(:user, :url => registration_path(:user)) do |f| %>
+						<div id="modal-container_signup" class = "modal-container">
+							<div id="modal-overlay_signup" class="modal-overlay"></div>
+							<div class="modal-box-wrapper">
+								<div class="modal-box">
+									<div class="modal-header">Register</div>
+									<div class="modal-content">
+										<%= f.text_field :email, class: "inputbox", placeholder: "enter email here" %>
+										<%= f.password_field :password, class: "inputbox", placeholder: "enter password here" %>
+    										<%= f.password_field :password_confirmation, class: "inputbox", placeholder: "enter password again"  %>
+										<%= f.check_box :remember_me %>
+										<%= f.label :remember_me %>
+									</div>
+										<%= f.submit 'Register', class: "button", id: "button-submit" %>
+										<%= button_tag 'Cancel', :type => 'reset', class: "button", id: "button-cancel" %>
 								</div>
-								<div class="button">Submit</div>
-								<div class="button">Cancel</div>
 							</div>
 						</div>
-					</div>
+					<% end %>
 				<% end %>	
 			</li>
 			<li class ="header_item right_item">
 				<% if user_signed_in? %>
 					<%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "logout") %>        
 				<% else %>
-					<div id='login'>Login</div>
+					<div id='login'>Sign in</div>
 						<div id="modal-container_login" class="modal-container">
 							<%= form_for(:user, :url => session_path(:user)) do |f| %>
 								<div id="modal-overlay_login" class="modal-overlay"></div>
 								<div class="modal-box-wrapper">
 									<div class="modal-box">
-										<div class="modal-header">Sign-in</div>
+										<div class="modal-header">Sign in</div>
 										<div class="modal-content">
-										  <%= f.text_field :email, class: "inputbox" %>
-										  <%= f.password_field :password, class: "inputbox" %>
+										  <%= f.text_field :email, class: "inputbox", placeholder: "enter email here" %>
+										  <%= f.password_field :password, class: "inputbox", placeholder: "enter password here" %>
 										  <%= f.check_box :remember_me %>
 										  <%= f.label :remember_me %>
 										  </br>
 										  <%= link_to "Forgot your password?", new_password_path(:user) %>
 										</div>
 										<%= f.submit 'Sign in', class: "button", id: "button-submit" %>
-										<%= button_tag 'Reset', :type => 'reset', class: "button", id: "button-cancel" %>
+										<%= button_tag 'Cancel', :type => 'reset', class: "button", id: "button-cancel" %>
 									</div>
 								</div>
 						<% end %>
