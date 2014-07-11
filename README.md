@@ -98,3 +98,6 @@ rake db:migrate
 rake test
 passenger start
 ```
+
+###Create Admin
+Before you can create forums, you will have to create a user and change its attribute forem_admin to TRUE.  Details about how to do this will be added here in a future commit.
