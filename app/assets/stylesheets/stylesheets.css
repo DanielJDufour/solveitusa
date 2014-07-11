@@ -76,3 +76,8 @@ input{max-width: 100%;}
 .devise-middle{padding: 75px 15px 15px 15px};
 #admin-bar{width: 100%; opacity: .85; background-color: #ffeb3b; padding: 2px;}
 .admin{text-align: center; margin: 0 auto; width: 100%; z-index: 9999999999; font-size: 14px; position: relative; color: white;}
+
+
+
+/*Stuff I could put into a separate forum.css if I wished */
+#forums_container{margin-top: 50px; padding: 50px;}
