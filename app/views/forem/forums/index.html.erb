@@ -78,7 +78,7 @@
 				<% end %>
 			</li>
 		</ul>
-		<% if current_user.forem_admin %><div id = "admin-bar"><p class="admin"><%= link_to "Click here to Administrate Forums", forem.admin_root_url %></p></div><% end %>
+		<% if user_signed_in? %><% if current_user.forem_admin %><div id = "admin-bar"><p class="admin"><%= link_to "Click here to Administrate Forums", forem.admin_root_url %></p></div><% end %><% end %>
 		<% if notice %><div id = "alert-bar"><p class="alert alert-success"><%= notice %></p></div><% end %>
 		<% if alert %><div id = "alert-bar"><p class="alert alert-danger"><%= alert %></p></div><% end %>	
 	</div>
