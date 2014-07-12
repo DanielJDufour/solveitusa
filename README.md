@@ -101,3 +101,9 @@ passenger start
 
 ###Create Admin
 Before you can create forums, you will have to create a user and change its attribute forem_admin to TRUE.  Details about how to do this will be added here in a future commit.
+
+
+##All Commands Together
+sudo apt-get update; sudo apt-get install -y curl vim git; sudo apt-get install -y postgresql libpq-dev; sudo -u postgres createuser --pwprompt --createdb --login --echo solveit; sudo vim /etc/postgresql/9.3/main/pg_hba.conf;
+
+sudo service postgresql restart; sudo apt-get remove -y --purge ruby-rvm ruby; sudo rm -rf /usr/share/ruby-rvm /etc/rmvrc /etc/profile.d/rvm.sh; rm -rf ~/.rvm* ~/.gem/ ~/.bundle*; curl -L https://get.rvm.io | bash -s stable --ruby; source /home/test/.rvm/scripts/rvm; gem install rails --no-ri --no-rdoc; gem install bundler --no-ri --no-rdoc; git clone http://github.com/DanielJDufour/solveitusa.git ~/solveitusa; cd ~/solveitusa; bundle update; bundle install; gem install passenger --no-ri --no-rdoc; rake db:setup; rake db:migrate; rake test; passenger start;
