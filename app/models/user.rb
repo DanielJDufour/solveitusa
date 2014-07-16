@@ -15,8 +15,8 @@ class User < ActiveRecord::Base
   #  name
   #end
 
-  def forem_email
-    email_address
-  end
+  #def forem_email
+  #  email_address
+  #end
 
 end
