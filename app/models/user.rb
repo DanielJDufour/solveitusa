@@ -10,9 +10,10 @@ class User < ActiveRecord::Base
   end
 
   # Per https://github.com/radar/forem
-  def forem_name
-    name
-  end
+  #Commented this part out because devise doesn't have name as column in user model/table by default
+  #def forem_name
+  #  name
+  #end
 
   def forem_email
     email_address
